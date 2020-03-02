@@ -1,0 +1,26 @@
+.header
+  display none
+  height 100px
+  padding 0 98px
+  align-items center
+
+  @media screen and (max-width 1700px)
+    display flex
+
+    @media screen and (max-width smallDesktopWidth)
+      padding 0 18px
+
+      @media screen and (max-width tableWidth)
+        padding 0 16px
+        height 77px
+
+  &__logo
+    size (90px 28px)
+
+    @media screen and (max-width tableWidth)
+      size (88px 27px)
+
+    &-img
+      margin-left 27px
+
+

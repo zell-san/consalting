@@ -1,0 +1,103 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+block content
+	.home
+		.home__item.home__item-banner.block-big.bg-yellow
+			include ../modules/breadcrumbs
+			.home__item-banner-block
+				h1 Управленческий консалтинг
+				h6.home__item-banner-descr Зарабатывайте на финансовых рынках <br>с финансовым консультантом компании.
+				a.btn-black Оставить заявку
+		.home__item.home__item-method.bg-black
+			h2.home__item-method-title.color-white <span class="underline_yellow">Уникальный способ</span> заработка на финансовых рынках
+			.home__item-city-media
+			h6.home__item-method-descr.color-grey Взаимодействуя с финансовым консультантом компании вы обеспечите отличный результат по доходности. Данный вид торговли рекомендуется инвесторам, не имеющим большого опыта в торговле на бирже.
+		.home__item.home__item-city
+		.home__item.home__item-how.bg-yellow
+			h4.home__item-how-title Как это работает?
+			h3.home__item-how-teaser Вся аналитическая работа  осуществляется сотрудниками компании
+			h6.home__item-how-descr Наблюдение за тенденциями рынка, новостями, а также прогнозы и мониторинг состояния личного счета клиента открывают возможности для дальнейших действий.
+			a.btn-black Оставить заявку
+		.home__item.home__item-consultation.bg-black.color-white
+			h4.home__item-consultation-title Как получить консультацию?
+			.home__item-consultation-block
+				.box.home__item-consultation-box
+					.box
+						.text_number 1
+						.block
+							h6.home__item-consultation-teaser Принять телефонный звонок
+							p.home__item-consultation-descr.color-grey от менеджера вашего портфеля
+				.box.home__item-consultation-box
+					.box
+						.text_number 2
+						.block
+							h6.home__item-consultation-teaser Выслушать аргументы – принять решение
+							p.home__item-consultation-descr.color-grey Специалист предложит несколько вариантов управления капиталом
+			p.home__item-consultation-subscrube.color-grey Если Вы не хотите принимать предложение своего консультанта, скажите ему об этом, и он разработает для Вас исправления или совершенно новую идею.
+		.home__item.home__item-advantages.block-big
+			h4.home__item-advantages-title Преимущества управленческого консалтинга
+			.home__item-advantages-box.box
+				.home__item-advantages-block
+					.advantages__img
+						img(src="/static/img/general/portf.png")
+					h6.advantages__text Индивидуальные инвестиционные портфели
+				.home__item-advantages-block
+					.advantages__img
+						img(src="/static/img/general/men.png")
+					h6.advantages__text Самостоятельность<br> в принятии решений
+				.home__item-advantages-block
+					.advantages__img
+						img(src="/static/img/general/education.png")
+					h6.advantages__text Уникальная возможность обучения
+				.home__item-advantages-block
+					.advantages__img
+						img(src="/static/img/general/risk.png")
+					h6.advantages__text Эффективное <br>управление рисками
+				.home__item-advantages-block
+					.advantages__img
+						img(src="/static/img/general/analitics.png")
+					h6.advantages__text Непрерывная<br>аналитика
+				.home__item-advantages-block
+					.advantages__img
+						img(src="/static/img/general/recomend.png")
+					h6.advantages__text Своевременные<br>рекомендации
+		.home__item.home__item-communication.bg-grey
+			h2 Как происходит общение клиента  с <span class="underline_yellow">личным финансовым</span> консультантом?
+		.home__item.home__item-message.bg-black.color-white
+			.home__item-message-block
+				.home__item-message-box.block
+					h5.home__item-message-teaser По телефону
+					p.home__item-message-descr.color-grey Звонок клиенту от менеджера портфеля, чтобы обсудить текущую ситуацию
+				.home__item-message-box.block
+					h5.home__item-message-teaser SMS-рекомендации
+					p.home__item-message-descr.color-grey Cпособ получения инвестиционных идей от личных финансовых консультантов
+				.home__item-message-box.block
+					h5.home__item-message-teaser Электронная почта
+					p.home__item-message-descr.color-grey Готовые инвестиционные решения клиенты получают  на личный адрес электронной почты.
+		.home__item.home__item-start.bg-yellow
+			h4.home__item-start-title C каким стартовым капиталом можно начать торги  при консалтинговом управлении?
+			.home__item-start-block
+				.home__item-start-box.box
+					.box
+						.text_number 1
+						.block
+							h6.home__item-start-descr Вы может начать с любой минимальной суммы
+				.home__item-start-box.box
+					.box
+						.text_number 2
+						.block
+							h6 Воспользуйтесь всеми возможностями рынка и станьте VIP-клиентом компании
+		.home__item.home__item-profit
+			h4.home__item-profit-title Какую прибыль можно ожидать?
+			.home__item-profit-block
+				h2.home__item-profit-teaser Тенденции рынка <span class="underline_yellow">постоянно меняются</span>
+				.block
+					h6.home__item-profit-descr.montserrat Но благодаря нашим стратегиям вы можете ожидать доход до
+					.box.home__item-profit-box
+						.text_big 12,7 %
+						h6.home__item-profit-info.montserrat За один квартал (90 дней).
+

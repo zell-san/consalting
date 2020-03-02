@@ -1,0 +1,220 @@
+@import 'utils/fonts.styl'
+@import 'utils/vars.styl'
+@import 'utils/mixins.styl'
+@import 'libs.styl'
+
+html
+	font-size baseFontSize
+	height 100%
+	color #000000
+	line-height: 24px;
+
+	@media screen and (max-width smallDesktopWidth)
+		font-size 14px
+		line-height 20px
+
+
+body
+	font-family IgraSans
+	font-weight normal
+	height 100%
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+
+h1
+	font-size: 52px;
+	line-height: 62px;
+
+	@media screen and (max-width desktopWidth)
+		font-size: 40px;
+		line-height: 60px;
+
+		@media screen and (max-width smallDesktopWidth)
+			font-size: 28px;
+			line-height: 52px;
+
+			@media screen and (max-width tableWidth)
+				font-size: 24px;
+				line-height: 32px;
+
+h2
+	font-size: 45px;
+	line-height: 56px;
+
+	@media screen and (max-width desktopWidth)
+		font-size: 38px;
+		line-height: 50px;
+
+		@media screen and (max-width smallDesktopWidth)
+			font-size: 32px;
+			line-height: 42px;
+
+			@media screen and (max-width tableWidth)
+				font-size: 24px;
+				line-height: 32px;
+				font-weight 500
+
+h3
+	font-size: 32px;
+	line-height: 44px;
+
+	@media screen and (max-width smallDesktopWidth)
+		font-size: 20px;
+		line-height: 28px;
+
+		@media screen and (max-width tableWidth)
+			font-size: 16px;
+			line-height: 24px;
+
+h4
+	font-size: 28px;
+	line-height: 36px;
+
+	@media screen and (max-width smallDesktopWidth)
+		font-size: 24px;
+		line-height: 32px;
+
+		@media screen and (max-width tableWidth)
+			font-size: 20px;
+			line-height: 28px;
+
+h5
+	font-size: 20px;
+	line-height: 28px;
+
+	@media screen and (max-width smallDesktopWidth)
+		font-size: 18px;
+		line-height: 28px;
+
+
+h6
+	font-size: 18px;
+	line-height: 28px;
+
+	@media screen and (max-width smallDesktopWidth)
+		font-size: 16px;
+		line-height: 24px;
+
+.text_big
+	font-size: 72px;
+	line-height: 72px;
+
+	@media screen and (max-width smallDesktopWidth)
+		font-size: 32px;
+		line-height: 72px;
+		word-wrap break-word
+
+
+ul,li
+	list-style-type none
+	margin 0
+	padding 0
+
+p
+	margin 0
+
+a
+	color black
+	text-decoration none
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+
+textarea
+	resize none
+
+section
+	position relative
+
+input,
+select,
+button
+	outline none
+
+*, *:before, *:after
+	box-sizing border-box
+
+img
+	width 100%
+
+.wrapper
+	display flex
+	flex-direction column
+	height 100%
+	background: #ffffff;
+	width calc(100% - 360px)
+
+	@media screen and (max-width 1700px)
+		width 100%
+
+.content
+	flex 1 0 auto
+
+.box
+	display flex
+
+.block
+	display flex
+	flex-direction column
+
+.bg-yellow
+	background: #FFCC00;
+
+.bg-black
+	background: #000000;
+
+.bg-grey
+	background: #F9F9F9;
+
+.color-white
+	color: #FFFFFF;
+
+.color-grey
+	color #747474
+
+.color-black
+	color: #000
+
+.block-big
+	flex-basis: 100%!important;
+
+.underline_yellow
+	box-shadow: 0px 10px 0px 0px #FFCC00
+
+	@media screen and (max-width tableWidth)
+		box-shadow: 0px 5px 0px 0px #FFCC00
+
+.text_number
+	@extend h2
+	line-height 48px
+	margin-right 41px
+
+.advantages__img
+	margin-bottom 30px
+	max-width 68px
+	max-height 59px
+	display flex
+	align-items center
+	height 100%
+
+.advantages__text
+	max-width 280px
+
+
+
+
+
+
+
+//Модули
+@import "modules/modules.styl"
+
+// СТРАНИЦЫ
+// Главная страница
+@import 'pages/index/index.styl'

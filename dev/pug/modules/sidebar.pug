@@ -1,0 +1,14 @@
+.sidebar
+    .sidebar__logo
+        img.sidebar__logo-img(src="/static/img/general/logo.png")
+
+    include ../modules/menu
+    .sidebar__login
+        a.sidebar__login-item.bg-black.color-white Вход
+            +icon('arrow-next', 'arrow-next-yellow')
+        a.sidebar__login-item Регистрация
+            +icon('arrow-next')
+        a.sidebar__login-item.bg-grey
+            .lang-img
+                img(src="/static/img/general/lang.png")
+            .color-grey Русский

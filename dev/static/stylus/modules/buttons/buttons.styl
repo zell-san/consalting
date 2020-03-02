@@ -1,0 +1,31 @@
+.btn-black
+  width: 280px;
+  height: 64px;
+  background: #000000;
+  color #ffffff
+  display flex
+  align-items center
+  justify-content center
+  font-size 16px
+  text-transform uppercase
+  letter-spacing: 0.03em;
+  font-family montserrat
+  font-weight 600
+
+  @media screen and (max-width smallDesktopWidth)
+    font-size: 14px;
+    line-height: 14px;
+    width 210px
+    height 52px
+
+    @media screen and (max-width tableWidth)
+      width 100%
+
+.btn-yellow
+  @extend .btn-black
+  background #FFCC00
+  color: #000000;
+  margin-left auto
+
+  @media screen and (max-width tableWidth)
+    margin-top 30px

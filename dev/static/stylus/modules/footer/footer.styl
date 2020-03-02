@@ -1,0 +1,79 @@
+footer
+  flex 0 0 auto
+
+.footer
+  font-family montserrat
+  padding 99px 99px 43px 99px
+
+  @media screen and (max-width smallDesktopWidth)
+    padding 95px 18px 59px 18px
+
+    @media screen and (max-width tableWidth)
+      padding 40px 16px 72px 16px
+
+  &__connect
+    align-items center
+    margin-bottom 58px
+
+    @media screen and (max-width tableWidth)
+      flex-wrap wrap
+
+    &-logo
+      size (152px 65px)
+      margin-right 187px
+
+      @media screen and (max-width smallDesktopWidth)
+        margin-right auto
+        size (127px 54px)
+
+        @media screen and (max-width tableWidth)
+          size (100px 40px)
+
+    &-social
+      margin-right 74px
+
+      @media screen and (max-width desktopWidth)
+        display none
+
+      &-img
+        size(64px)
+        margin-right 25px
+
+  &__menu
+    justify-content space-between
+    margin-bottom 56px
+
+    @media screen and (max-width smallDesktopWidth)
+      flex-wrap wrap
+
+    &-block
+      @media screen and (max-width smallDesktopWidth)
+        flex-basis 33.33%
+        margin-bottom 25px
+
+        @media screen and (max-width tableWidth)
+          flex-basis 100%
+
+      &:last-child
+        @media screen and (max-width smallDesktopWidth)
+          flex-basis 66.66%
+
+    &-item
+      color #747474
+
+      &:first-child
+        color: #ffffff
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom 18px
+
+  &__info
+    font-size: 12px;
+    line-height: 20px;
+
+    &-notification
+      font-family: Igra Sans;
+      margin-bottom 13px
+
+    &-descr
+      //
